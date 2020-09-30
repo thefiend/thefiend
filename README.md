@@ -1,5 +1,5 @@
 ### Hi there 👋
-## Something is brewing... :coffee:
+<p>Something is brewing... :coffee:</p>
 <a href="https://www.buymeacoffee.com/jasonkam" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important; width: auto !important;"></a>
 <br />
 [![thefiend's github stats](https://github-readme-stats.vercel.app/api?username=thefiend)](https://github.com/thefiend)
