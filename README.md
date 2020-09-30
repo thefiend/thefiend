@@ -1,6 +1,7 @@
 ### Hi there 👋
 ## Something is brewing... :coffee:
 <a href="https://www.buymeacoffee.com/jasonkam" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important; width: auto !important;"></a>
+<br />
 [![thefiend's github stats](https://github-readme-stats.vercel.app/api?username=thefiend)](https://github.com/thefiend)
 <!--
 **thefiend/thefiend** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
