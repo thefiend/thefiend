@@ -10,12 +10,13 @@ export default function Navigation() {
     { href: '#experience', label: 'Experience' },
     { href: '#project', label: 'Project' },
     { href: '#technical-skills', label: 'Technical Skills' },
+    { href: '#writing', label: 'Writing' },
     { href: '#contact', label: 'Contact' },
   ]
   
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'experience', 'project', 'technical-skills', 'contact']
+      const sections = ['home', 'experience', 'project', 'technical-skills', 'writing', 'contact']
       const scrollPosition = window.scrollY + 100
       
       for (const section of sections) {

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import SkillIcon from '@/components/SkillIcon'
+import MediumArticles from '@/components/MediumArticles'
 
 export default function Home() {
   const [lightboxIndex, setLightboxIndex] = useState(-1)
@@ -334,6 +335,17 @@ export default function Home() {
             </div>
 
           </div>
+        </section>
+
+        {/* Writing Section */}
+        <section id="writing" className="mb-32">
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold mb-4">Writing</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              Thoughts on software engineering, architecture, and lessons from the field.
+            </p>
+          </div>
+          <MediumArticles />
         </section>
 
         {/* Contact Section */}
