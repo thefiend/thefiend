@@ -17,8 +17,7 @@ export default function MediumArticles() {
   const [error, setError] = useState(false)
 
   useEffect(() => {
-    const feed = encodeURIComponent('https://thefiend.medium.com/feed')
-    fetch(`https://api.rss2json.com/v1/api.json?rss_url=${feed}&count=6`)
+    fetch('/.netlify/functions/medium-feed')
       .then((r) => r.json())
       .then((data) => {
         if (data.status === 'ok') {
