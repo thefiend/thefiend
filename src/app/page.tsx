@@ -5,8 +5,6 @@ import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import SkillIcon from '@/components/SkillIcon'
 
-const basePath = process.env.NODE_ENV === 'production' ? '/thefiend' : ''
-
 export default function Home() {
   const [lightboxIndex, setLightboxIndex] = useState(-1)
   const person = {
@@ -66,7 +64,7 @@ export default function Home() {
       description: 'A fun and simple voting app that helps groups decide what to eat in seconds. Create a poll, vote with friends, and settle the "where to makan?" debate effortlessly.',
       year: '2023',
       link: 'https://github.com/thefiend/makangowhere',
-      preview: `${basePath}/assets/images/portfolio/MakanGoWhere.png`,
+      preview: '/assets/images/portfolio/MakanGoWhere.png',
       tags: ['React', 'Spring Boot', 'MySQL'],
       highlights: [
         'Built real-time polling system with live vote synchronisation across multiple participants',
@@ -79,7 +77,7 @@ export default function Home() {
       description: 'Free online random name picker tool that lets you enter a list of names or items and randomly select winners for giveaways, raffles, or contests.',
       year: '2019',
       link: 'https://www.luckydraw.me',
-      preview: `${basePath}/assets/images/portfolio/LuckyDraw.png`,
+      preview: '/assets/images/portfolio/LuckyDraw.png',
       tags: ['React', 'JavaScript', 'Responsive Design'],
       highlights: [
         'Developed a stateless, client-side randomisation engine ensuring fair and reproducible draws',
@@ -97,7 +95,7 @@ export default function Home() {
         <section id="home" className="mb-32 relative z-10">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-8">
             <img
-              src={`${basePath}/assets/images/jason-kam.jpeg`}
+              src="/assets/images/jason-kam.jpeg"
               alt={person.name}
               className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top shrink-0 border border-neutral-200 dark:border-neutral-800"
             />
