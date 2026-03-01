@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { useReveal } from '@/components/useReveal'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import SkillIcon from '@/components/SkillIcon'
@@ -8,6 +9,12 @@ import MediumArticles from '@/components/MediumArticles'
 
 export default function Home() {
   const [lightboxIndex, setLightboxIndex] = useState(-1)
+  const heroRef = useReveal()
+  const expRef = useReveal()
+  const projectRef = useReveal()
+  const skillsRef = useReveal()
+  const writingRef = useReveal()
+  const contactRef = useReveal()
   const person = {
     name: 'Jason Kam',
     role: 'Full Stack Developer',
@@ -16,6 +23,7 @@ export default function Home() {
     social: [
       { name: 'GitHub', url: 'https://github.com/thefiend' },
       { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jasonkam' },
+      { name: 'Medium', url: 'https://thefiend.medium.com' },
     ]
   }
 
@@ -93,7 +101,7 @@ export default function Home() {
       <div className="max-w-5xl mx-auto px-6 py-12 md:py-20">
         
         {/* Hero Section */}
-        <section id="home" className="mb-32 relative z-10">
+        <section id="home" className="mb-32 relative z-10 reveal visible" ref={heroRef as React.RefObject<HTMLElement>}>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-8">
             <img
               src="/assets/images/jason-kam.jpeg"
@@ -104,9 +112,9 @@ export default function Home() {
               <span className="inline-block px-3 py-1 text-xs font-medium bg-neutral-100 dark:bg-neutral-900 rounded-full mb-6">
                 {person.location}
               </span>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">Kam Ming Feng</h1>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 leading-tight">
-                Full Stack Developer
+              <h1 className="text-4xl md:text-6xl font-bold mb-3 leading-tight">{person.name}</h1>
+              <h2 className="text-xl md:text-2xl text-neutral-500 dark:text-neutral-400 font-medium mb-6 leading-tight">
+                {person.role}
               </h2>
               <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
                 Singapore-based developer building modern, scalable web applications with clean design and frictionless user experiences.
@@ -138,8 +146,11 @@ export default function Home() {
 
 
         {/* Experience Section */}
-        <section id="experience" className="mb-32">
-          <h3 className="text-2xl font-bold mb-12">Experience</h3>
+        <section id="experience" className="mb-32 reveal" ref={expRef as React.RefObject<HTMLElement>}>
+          <div className="flex items-center gap-3 mb-12">
+            <div className="w-8 h-px bg-neutral-400 dark:bg-neutral-600" />
+            <h3 className="text-2xl font-bold">Experience</h3>
+          </div>
           <div className="space-y-12">
             {experience.map((item, index) => (
               <div key={index} className={`pb-12 ${index < experience.length - 1 ? 'border-b border-neutral-200 dark:border-neutral-800' : ''}`}>
@@ -167,9 +178,12 @@ export default function Home() {
         </section>
 
         {/* Project Section */}
-        <section id="project" className="mb-32">
+        <section id="project" className="mb-32 reveal" ref={projectRef as React.RefObject<HTMLElement>}>
           <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4">Project</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-px bg-neutral-400 dark:bg-neutral-600" />
+              <h3 className="text-2xl font-bold">Projects</h3>
+            </div>
             <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
               A curated collection of projects showcasing my growth across web development. Each project reflects deliberate problem-solving, technical refinement, and continuous skill advancement.
             </p>
@@ -237,8 +251,11 @@ export default function Home() {
         </section>
 
         {/* Technical Skills Section */}
-        <section id="technical-skills" className="mb-32">
-          <h3 className="text-2xl font-bold mb-12">Technical Skills</h3>
+        <section id="technical-skills" className="mb-32 reveal" ref={skillsRef as React.RefObject<HTMLElement>}>
+          <div className="flex items-center gap-3 mb-12">
+            <div className="w-8 h-px bg-neutral-400 dark:bg-neutral-600" />
+            <h3 className="text-2xl font-bold">Technical Skills</h3>
+          </div>
           <div className="space-y-8">
 
             <div>
@@ -338,9 +355,12 @@ export default function Home() {
         </section>
 
         {/* Writing Section */}
-        <section id="writing" className="mb-32">
+        <section id="writing" className="mb-32 reveal" ref={writingRef as React.RefObject<HTMLElement>}>
           <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4">Writing</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-px bg-neutral-400 dark:bg-neutral-600" />
+              <h3 className="text-2xl font-bold">Writing</h3>
+            </div>
             <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
               Thoughts on software engineering, architecture, and lessons from the field.
             </p>
@@ -349,8 +369,12 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="mb-32 text-center">
-          <h3 className="text-2xl font-bold mb-6">Get in touch</h3>
+        <section id="contact" className="mb-32 text-center reveal" ref={contactRef as React.RefObject<HTMLElement>}>
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="w-8 h-px bg-neutral-400 dark:bg-neutral-600" />
+            <h3 className="text-2xl font-bold">Get in touch</h3>
+            <div className="w-8 h-px bg-neutral-400 dark:bg-neutral-600" />
+          </div>
           <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
             Whether you have a question or just want to say hi, feel free to reach out!
           </p>
@@ -363,10 +387,24 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="pt-12 border-t border-neutral-200 dark:border-neutral-800 text-center">
-          <p className="text-sm text-neutral-500 dark:text-neutral-500">
-            © {new Date().getFullYear()} {person.name}. All rights reserved.
-          </p>
+        <footer className="pt-12 border-t border-neutral-200 dark:border-neutral-800">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-neutral-500 dark:text-neutral-500">
+              © {new Date().getFullYear()} {person.name}. Built with Next.js & Tailwind CSS.
+            </p>
+            <div className="flex gap-4">
+              {person.social.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          </div>
         </footer>
       </div>
 
