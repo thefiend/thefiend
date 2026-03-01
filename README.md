@@ -1,19 +1,79 @@
-### Hi there 👋
-[![thefiend's github stats](https://github-readme-stats.vercel.app/api?username=thefiend)](https://github.com/thefiend)
-<p>Something is brewing... :coffee:</p>
-<p><a href="https://www.buymeacoffee.com/jasonkam" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important; width: auto !important;"></a></p>
+# Jason Kam — Portfolio
 
-<!--
-**thefiend/thefiend** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A modern, minimalist portfolio website built with Next.js 14, TypeScript, and Tailwind CSS.
 
-Here are some ideas to get you started:
+🌐 **Live site:** [thefiend.github.io/thefiend](https://thefiend.github.io/thefiend)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Tech Stack
+
+- **Framework:** Next.js 14 (static export)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Font:** Inter (Google Fonts)
+- **Icons:** simple-icons
+- **Lightbox:** yet-another-react-lightbox
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+└── components/
+    ├── FloatingElements.tsx
+    ├── Navigation.tsx
+    └── SkillIcon.tsx
+public/
+└── assets/
+    ├── favicon.ico
+    └── images/
+        ├── jason-kam.jpeg
+        └── portfolio/
+            ├── LuckyDraw.png
+            └── MakanGoWhere.png
+```
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Deploying to GitHub Pages
+
+Deployment is automated via GitHub Actions on every push to `master`.
+
+### One-time setup
+
+1. Go to your repo on GitHub → **Settings** → **Pages**
+2. Under **Source**, select **GitHub Actions**
+3. Push to `master` — the workflow at `.github/workflows/deploy.yml` will build and deploy automatically
+
+### Manual build
+
+```bash
+npm run build
+# Static output is generated in ./out
+```
+
+### How it works
+
+- `next.config.js` sets `output: 'export'` which generates a fully static site into `./out`
+- The GitHub Actions workflow builds the project and uploads `./out` to GitHub Pages
+- Triggered automatically on every push to `master`
+
+## Contact
+
+- **Email:** jason@jasys.xyz
+- **Location:** Singapore
+- **GitHub:** [github.com/thefiend](https://github.com/thefiend)
+- **LinkedIn:** [linkedin.com/in/jasonkam](https://www.linkedin.com/in/jasonkam)
