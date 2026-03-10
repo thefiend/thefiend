@@ -32,7 +32,7 @@ export default function Home() {
       company: 'GovTech',
       role: 'Software Engineer',
       period: 'Oct 2022 - Present',
-      summary: "Owned and led fullstack development of a financial validation and grant disbursement platform handling 2.5M+ user records and processing $10.7M+ in payouts, ensuring responsive UX, accurate high-volume data workflows, and robust backend system (Angular + Spring Boot + PgSQL).",
+      summary: "Led high-impact financial validation and grant disbursement systems delivering $10.7M+ in payouts, improving performance by ~60% for 2.5M+ users, refactoring frontends for multi-team velocity, and reducing security response times by 93% across critical government services.",
       highlights: [
         "Owned and led fullstack development of a financial validation and grant disbursement platform handling 2.5M+ user records and processing $10.7M+ in payouts, ensuring responsive UX, accurate high-volume data workflows, and robust backend validation (Angular + Spring Boot + PgSQL)",
         "Enhanced system performance and scalability by migrating databases from MySQL → PostgreSQL via AWS DMS, achieving ~60% throughput improvement and enabling horizontal scaling for complex workloads.",
