@@ -76,4 +76,4 @@ npm run build
 - **Email:** jason@jasys.xyz
 - **Location:** Singapore
 - **GitHub:** [github.com/thefiend](https://github.com/thefiend)
-- **LinkedIn:** [linkedin.com/in/jasonkam](https://www.linkedin.com/in/jasonkam)
+- **LinkedIn:** [linkedin.com/in/jasonkammf](https://www.linkedin.com/in/jasonkammf)

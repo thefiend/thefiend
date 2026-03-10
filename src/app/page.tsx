@@ -22,7 +22,7 @@ export default function Home() {
     email: 'jason@jasys.xyz',
     social: [
       { name: 'GitHub', url: 'https://github.com/thefiend' },
-      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jasonkam' },
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jasonkammf' },
       { name: 'Medium', url: 'https://thefiend.medium.com' },
     ]
   }
