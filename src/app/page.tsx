@@ -32,13 +32,13 @@ export default function Home() {
       company: 'GovTech',
       role: 'Software Engineer',
       period: 'Oct 2022 - Present',
-      summary: "Led high-impact grant systems delivering $10.7M+ in citizen disbursements, 60% performance improvements benefitting 2.5M+ users, and 93% security response time reductions across critical government systems.",
+      summary: "Owned and led fullstack development of a financial validation and grant disbursement platform handling 2.5M+ user records and processing $10.7M+ in payouts, ensuring responsive UX, accurate high-volume data workflows, and robust backend system (Angular + Spring Boot + PgSQL).",
       highlights: [
-        "Delivered $10.7M in citizen disbursements through high-scale platform serving 2.8K beneficiaries, implementing Spring Boot and Spark architecture with robust eligibility validation and compliance frameworks",
-        "Enhanced system performance benefiting 2.5M users by migrating databases from MySQL to PostgreSQL via AWS DMS, achieving ~60% improvement in throughput and reliability through load testing, enabling horizontal scalability for high-complexity workloads.",
-        "Reduced development-to-merge cycle time by 75% (4 days → 1 day) by integrating AI into the development workflow and merge request reviews, validated via JIRA burndown metrics and GitLab analytics.",
-        "Architected distributed validation pipelines for mission-critical systems, enhancing auditability, fault tolerance, and workflow reliability across government infrastructure",
-        "Strengthened security posture across 6 services by implementing real-time CVE monitoring and automated remediation, achieving 93% reduction in vulnerability response time (from 2 weeks to 1 day)"
+        "Owned and led fullstack development of a financial validation and grant disbursement platform handling 2.5M+ user records and processing $10.7M+ in payouts, ensuring responsive UX, accurate high-volume data workflows, and robust backend validation (Angular + Spring Boot + PgSQL)",
+        "Enhanced system performance and scalability by migrating databases from MySQL → PostgreSQL via AWS DMS, achieving ~60% throughput improvement and enabling horizontal scaling for complex workloads.",
+        "Refactored monolithic frontend into independent React microsites, enabling multiple teams to work concurrently, improving release velocity and reducing cross-team integration risk",
+        "Strengthened security posture across 6 services by implementing real-time CVE monitoring and automated remediation, achieving 93% reduction in vulnerability response time (from 2 weeks to 1 day)",
+        "Boosted developer productivity by ~50% (feature delivery ~4–5 days → ~2–3 days) through AI-assisted code reviews, automated CI/CD workflows, AI-driven programming optimizations, and Jest testing"
       ]
     },
     {
@@ -47,10 +47,10 @@ export default function Home() {
       period: 'Mar 2021 - Oct 2022',
       summary: "Selected as one of only 20 candidates for the exclusive Technology Associate Programme (TAP), a highly competitive leadership-trainee programme designed to develop technical expertise and professional skills within Singapore's public sector technology initiatives.",
       highlights: [
-        "Spearheaded payment platform integration that expanded disbursement options by 300% and reduced transaction processing time by 50%, processing $1M+ in monthly grant disbursements",
-        "Enabled launch of 2 new grant schemes by developing streamlined application system using ReactJS and Ruby on Rails, improving accessibility and user experience for 5,000+ annual applicants",
-        "Expanded support for underprivileged communities by building scalable solutions with ReactJS and Go, delivering technology that served 100+ beneficiaries and increased grant schemes accessibility by 60%",
-        "Mentored 2 software engineering interns over 6-month cycles, providing technical guidance and professional development support"
+        "Built reusable, configurable frontend components for $2.5M+ in government grant disbursements using test-driven development (TDD) and Jest unit testing, ensuring robust, maintainable, and high-quality code",
+        "Architected a real-time WebSocket-enabled web application for an AI temperature detection system during COVID-19, enabling low-latency monitoring and alerting",
+        "Designed and shipped React-based grant application portal for 5,000+ monthly users, improving user experience and accessibility",
+        "Mentored engineers and interns through code reviews, providing guidance on optimized solutions that improved code quality and accelerated development speed."
       ]
     },
     {
