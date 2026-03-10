@@ -44,11 +44,11 @@ export default function Home() {
     {
       company: 'GovTech',
       role: 'Associate Software Engineer',
-      period: 'Mar 2019 - Oct 2022',
+      period: 'Mar 2021 - Oct 2022',
       summary: "Selected as one of only 20 candidates for the exclusive Technology Associate Programme (TAP), a highly competitive leadership-trainee programme designed to develop technical expertise and professional skills within Singapore's public sector technology initiatives.",
       highlights: [
         "Built reusable, configurable frontend components for $2.5M+ in government grant disbursements using test-driven development (TDD) and Jest unit testing, ensuring robust, maintainable, and high-quality code",
-        "Architected a real-time WebSocket-enabled web application for an AI temperature detection system during COVID-19, enabling low-latency monitoring and alerting",
+        "Architected a real-time WebSocket-enabled web application for an AI temperature detection system, enabling low-latency monitoring and alerting",
         "Designed and shipped React-based grant application portal for 5,000+ monthly users, improving user experience and accessibility",
         "Mentored engineers and interns through code reviews, providing guidance on optimized solutions that improved code quality and accelerated development speed."
       ]
