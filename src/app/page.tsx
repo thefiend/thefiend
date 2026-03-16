@@ -69,6 +69,20 @@ export default function Home() {
 
   const projects = [
     {
+      title: 'BioSpace',
+      description: 'A platform that lets users build and manage multiple customizable pages, allowing them to share tailored link collections for different audiences from a single dashboard.',
+      year: '2026',
+      link: 'https://bio-link-hub--jasyscotech.replit.app/',
+      demo: 'https://bio-link-hub--jasyscotech.replit.app/p/stack-x-cyber-2026',
+      preview: '/assets/images/portfolio/BioSpace.png',
+      tags: ['Repl.it', 'Vibe Coding'],
+      highlights: [
+        'Built a multi-profile link-in-bio platform enabling users to create and manage multiple pages for different audiences',
+        'Designed customizable themes and responsive layouts to support branding across different usage',
+        'Implemented full-stack architecture with modern web technologies to ensure fast page loading and seamless profile management',
+      ]
+    },
+    {
       title: 'MakanGoWhere',
       description: 'A fun and simple voting app that helps groups decide what to eat in seconds. Create a poll, vote with friends, and settle the "where to makan?" debate effortlessly.',
       year: '2023',
@@ -227,6 +241,18 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-sm font-medium hover:text-neutral-600 dark:hover:text-neutral-400 transition-colors">
                         View Project
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    )}
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-4 inline-flex items-center gap-2 text-sm font-medium hover:text-neutral-600 dark:hover:text-neutral-400 transition-colors">
+                        View Demo Link
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
